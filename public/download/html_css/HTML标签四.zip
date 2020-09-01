@@ -1,0 +1,124 @@
+### 上期回顾
+##### 列表标签
+- **什么是列表？**
+- **列表的分类**
+1.无序列表(ul li)
+2.有序列表(ol li)
+3.定义列表(dl dt dd)
+- **列表的type属性**
+- **列表的应用场景**
+##### 表格标签
+- **什么是表格标签？**
+- **表格标签的使用格式**
+- **caption标签的作用**
+- **border属性**
+##### 表单标签
+- **form标签作用**
+- **input标签的type属性**
+1.text
+2.password
+3.hidden
+4.radio
+5.checkbox
+6.button
+7.image
+8.submit
+9.reset
+##### label标签
+- label标签与input标签联合使用的方法
+- label标签的意义
+##### 补充扩展：实体字符
+- 学会查询及使用实体字符
+** **
+#### 容器元素
+- 作用：用于包裹其他元素的元素，划分网页排版模块
+- div 元素（常用）
+```html
+<div>
+  容器
+</div>
+```
+- **html5中新增的语义化容器：**
+1.header：表示页头，也可表示文章头部
+2.footer：表示页尾，也可表示文章尾部
+3.article：表示整片文章
+4.section：表示文章的章节
+5.aside：表示附加信息（侧边栏）
+
+- span 元素（常用）
+```html
+<span>我是span，常用于普通文本</span>
+```
+- i 元素
+```html
+<i>我是i元素，常用于展示图标</i>
+```
+- strong 元素
+```html
+<strong>我是strong元素，将内容粗体展示，表示强调内容</strong>
+```
+- b 元素
+```html
+<b>我是b元素，用于文字加粗，与strong元素不同，没有强调的语义</b>
+```
+- pre 元素
+```html
+<pre>
+  我是pre元素
+  我的内部不会出现空白折叠
+</pre>
+```
+- select 元素
+**作用：**用于定义下拉列表
+**格式：**
+```html
+  <select>
+    <option>选项1</option>
+    <option>选项2</option>
+    <option>选项3</option>
+    <option selected>选项4</option>
+  </select>
+```
+![select](https://upload-images.jianshu.io/upload_images/20040970-aa0376183f4019b4.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+>**selected属性：**用于选择默认值，如果没有指定，则默认选择第一项
+select标签可在form表单中使用
+
+- textarea元素
+**作用：**定义一个文本域，可输入多行内容
+**格式：**
+```html
+  <textarea cols="5" rows="10">请输入内容...</textarea>
+```
+![textarea](https://upload-images.jianshu.io/upload_images/20040970-eb09817567210a76.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+>**cols和rows：**指定输入文字得列数和行数，但是不能限制输入文字的最大个数，默认情况下，输入框可以拉伸，若要使用默认值，在标签之间输入
+** **
+#### 行级元素和块级元素
+- 行级元素：没有独占一行，不能设置其宽高，如 a元素 
+- 块级元素：独占一行，可以设置宽高如 div 元素
+- img元素、iframe元素为行块盒，没有独占一行，且可以设置宽高
+###### 包含关系
+>- 块级元素可以包含行级元素，而行级元素不能包含块级元素，a 元素除外
+>- 而现在，已经没有行级元素和块级元素这种说法，元素的包含关系由元素的内容类别决定
+**总结：**
+>- 容器元素可以包含任何元素，a 元素几乎包含任何元素，某些元素具有固定的子元素如：（ul>li，ol>li），标题元素和段落元素不能相互嵌套，且不能包含容器元素
+- **html的标签就到此结束，下期为CSS的内容，还想要学习更多标签请点击[HTML5元素周期表](http://www.xuanfengge.com/funny/html5/element/)**
+
+#### 补充
+- iframe元素
+**作用：**用于在一个页面中嵌套另一个页面
+**格式：**
+```html
+  <a href="https://xxx.com" target="baidu">跳到百度</a>
+  <iframe src="https://www.baidu.com" name="baidu"></iframe>
+<!-- 链接别人网站的资源，如视频 -->
+  <iframe src="https://player.bilibili.com/player.html?aid=75423928&cid=129017953&page=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+```
+![iframe](https://upload-images.jianshu.io/upload_images/20040970-81a8bd2275d22709.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+>**iframe 与 a 元素的联用：**
+将iframe元素的name属性值赋为a元素的target属性值
+
+![END](https://upload-images.jianshu.io/upload_images/20040970-83274e6853a60849.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+

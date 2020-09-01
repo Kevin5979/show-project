@@ -1,0 +1,1 @@
+window.onload=function(){let mySwiper=new Swiper('.swiper-container',{direction:'vertical',on:{init:function(){swiperAnimateCache(this);swiperAnimate(this);},slideChangeTransitionEnd:function(){swiperAnimate(this);}}});let backTop=document.querySelector(".section-end .back-top");backTop.addEventListener('click',function(){mySwiper.slideTo(0);})}
